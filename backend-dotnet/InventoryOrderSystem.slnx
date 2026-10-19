@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/InventoryOrderSystem.Api/InventoryOrderSystem.Api.csproj" />
+    <Project Path="src/InventoryOrderSystem.Core/InventoryOrderSystem.Core.csproj" />
+    <Project Path="src/InventoryOrderSystem.Infrastructure/InventoryOrderSystem.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/InventoryOrderSystem.Tests/InventoryOrderSystem.Tests.csproj" />
+  </Folder>
+</Solution>

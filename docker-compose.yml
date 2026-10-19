@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: inventory_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: inventory_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./database/seed.sql:/docker-entrypoint-initdb.d/02_seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d inventory_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Dockerfile
+    container_name: inventory_backend
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5000
+      - DatabaseProvider=PostgreSQL
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=inventory_db;Username=postgres;Password=postgrespassword;
+      - Jwt__Key=super_secret_jwt_key_that_is_at_least_32_bytes_long_12345!
+      - Jwt__Issuer=InventoryOrderSystem
+      - Jwt__Audience=InventoryOrderSystemAudience
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  chatbot:
+    build:
+      context: ./chatbot-python
+      dockerfile: Dockerfile
+    container_name: inventory_chatbot
+    restart: always
+    environment:
+      - PORT=8000
+      - DOTNET_API_BASE_URL=http://backend:5000/api
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - LLM_MODEL=${LLM_MODEL:-gpt-4o-mini}
+      - ENVIRONMENT=production
+    ports:
+      - "8000:8000"
+    depends_on:
+      - backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: inventory_frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+      - chatbot
+
+volumes:
+  postgres_data:

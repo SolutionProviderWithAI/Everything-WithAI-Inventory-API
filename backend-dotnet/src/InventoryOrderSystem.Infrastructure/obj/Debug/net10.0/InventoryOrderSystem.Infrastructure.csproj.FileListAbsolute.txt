@@ -1,0 +1,15 @@
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\bin\Debug\net10.0\InventoryOrderSystem.Infrastructure.deps.json
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\bin\Debug\net10.0\InventoryOrderSystem.Infrastructure.dll
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\bin\Debug\net10.0\InventoryOrderSystem.Infrastructure.pdb
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\bin\Debug\net10.0\InventoryOrderSystem.Core.dll
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\bin\Debug\net10.0\InventoryOrderSystem.Core.pdb
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.AssemblyInfo.cs
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\Inventor.09054C5C.Up2Date
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.dll
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\refint\InventoryOrderSystem.Infrastructure.dll
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\InventoryOrderSystem.Infrastructure.pdb
+C:\AntiGravityAIProject\MyFirstChatBotApplication\inventory-order-system\backend-dotnet\src\InventoryOrderSystem.Infrastructure\obj\Debug\net10.0\ref\InventoryOrderSystem.Infrastructure.dll
